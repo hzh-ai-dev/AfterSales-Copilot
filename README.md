@@ -206,15 +206,6 @@ flowchart TD
 
 SQLite 文件、检查点及事件可能含对话内容，勿提交真实个人数据。第一版没有真实退款、物流、向量检索、后台队列、多人分布式调度、任意政策语义冲突证明和生产认证。
 
-## 面试讲解顺序
-
-1. 用 A/B/C 展示不同工具集合、真实状态分支及人工恢复。
-2. 打开 `graph.py` 解释 State、Node、条件边和 interrupt。
-3. 打开 `model.py` 对比真实 Function Calling 与离线模拟。
-4. 打开 `policy.py` 解释模型建议和确定性授权的边界。
-5. 打开 `storage.py` 和崩溃恢复测试，说明检查点不等于业务事务、幂等如何补足。
-6. 说明单 worker、模拟账户和真实 LLM 尚需测量的边界。
-
 ## 官方参考
 
 - [LangGraph Interrupts](https://docs.langchain.com/oss/python/langgraph/interrupts)
